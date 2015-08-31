@@ -2,31 +2,37 @@
   Base Styles
 --------------------------- */
 
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
   color: #797e83;
   font-size: 16px;
 	margin: 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background: url(../img/bg-769.jpg) top center no-repeat;
+  background-size: cover;
 }
 
 ul,
 li {
   margin: 0;
   padding: 0;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 a {
   color: #656a6e;
   text-decoration: none;
-  font-weight: 400; 
+  font-weight: 400;
+}
+
+.container-fluid {
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #f00;
 }
 
 .container {
@@ -45,16 +51,19 @@ a {
 	p {
 		-webkit-column-count: 2;
 		-webkit-column-gap: 2.5em;
-	
+
 		-moz-column-count: 2;
 		-moz-column-gap: 2.5em;
-	
+
 		column-count: 2;
 		column-gap: 2.5em;
 	}
 }
 
 @media (min-width: 1200px) {
+  body {
+    background: url(../img/bg-1200.jpg) no-repeat;
+  }
 	.container {
 		width: 1080px;
 	}
