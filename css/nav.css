@@ -1,10 +1,67 @@
 /* --------------------------
   Main Styles
 --------------------------- */
+#nav {
+  font: 200 30px "Work Sans", Helvetica, sans-serif;
+  margin-bottom: 60px;
+}
 
+#nav li {
+  border: 1px solid rgba(255, 255, 255, .5);
+}
+
+#nav li a {
+  padding: 20px 20px 30px 20px;
+  display: block;
+}
+
+#nav li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
 
 
 /* --------------------------
   Media Queries
 --------------------------- */
+@media (min-width: 769px) {
+  #nav {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: -webkit-row;
+    flex-direction: row;
+  }
 
+  #nav li {
+    display: -webkit-flex;
+    display: flex;
+    width: 25%;
+    border: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  #nav li a {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #nav li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  #nav li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  #nav li:not(:first-child) {
+    border-left: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  /*#nav {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: -webkit-row;
+    flex-direction: row;
+  }*/
+}
